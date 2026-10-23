@@ -1,0 +1,2 @@
+import {formatDate} from "./content";
+export function bookingWhatsAppUrl(phone:string,name:string,date:string,time?:string){const message=time?`Olá, ${name}! Gostaria de agendar um atendimento.\n\nData: ${formatDate(date)}\nHorário: ${time} (horário de Brasília)\n\nPode confirmar a disponibilidade, por favor?`:`Olá, ${name}! Gostaria de consultar a disponibilidade para ${formatDate(date)}. Podemos combinar um horário?`;return `https://wa.me/${phone.replace(/\D/g,"")}?text=${encodeURIComponent(message)}`;}
