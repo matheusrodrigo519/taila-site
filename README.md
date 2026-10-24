@@ -10,6 +10,6 @@ O código da interface está em `src/`. Para atualizar os arquivos publicados, e
 
 GitHub Pages hospeda a interface estática. O banco de dados, a agenda compartilhada, as publicações e a área administrativa permanecem no serviço existente, configurado em `src/lib/service.ts`. A interface consulta apenas as APIs públicas, sem cookies nem credenciais. As alterações feitas pela terapeuta são lidas diretamente desse serviço; a agenda não depende de dados salvos no navegador do visitante.
 
-A opção **Área da terapeuta** abre o painel seguro no serviço existente. O domínio desse painel continua sendo `taila-acolher.daringboar3.chatgpt.site`; o endereço de divulgação da página é do GitHub Pages. Senhas, dados de clientes e chaves de servidor não fazem parte deste repositório. O projeto completo permanece no repositório privado `taila-terapia`.
+A opção **Área da terapeuta** abre o painel seguro no serviço existente. O painel administrativo utiliza um serviço externo protegido, configurado no próprio projeto; o endereço público de divulgação permanece no GitHub Pages. Senhas, dados de clientes e chaves de servidor não fazem parte deste repositório. O projeto completo permanece no repositório privado `taila-terapia`.
 
 Textos identificados como ilustrativos são sugestões editoriais e podem ser substituídos pelo painel. A imagem de ambiente é ilustrativa e não representa um consultório real.
